@@ -5,13 +5,14 @@ import Sidenav from "./Sidenav.astro";
 import Timeline from "./Timeline.astro";
 ---
 
-<main class="grid grid-cols-5 gap-5 overflow-hidden">
-  <section class="col-span-12 md:col-span-2 sm:pt-48 self-start">
+<main class="grid grid-cols-6 gap-10 overflow-hidden py-10">
+  <div class="sm:col-span-1"></div>
+  <section class="col-span-12 md:col-span-1 sm:pt-48 self-start">
       <Sidenav class="" />
   </section>
-  <section class="col-span-12 md:col-span-2 sm:pt-24 px-20">
+  <section class="col-span-12 md:col-span-3 px-28 sm:pt-24">
     <main
-      class="m-auto w-full flex flex-col gap-24 justify-start items-center sm:items-start overflow-y-auto"
+      class="m-auto w-full flex flex-col gap-24 justify-start items-center sm:items-start overflow-y-auto overflow-x-hidden"
     >
       <section>
         <Header />
