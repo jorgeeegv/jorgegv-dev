@@ -2,21 +2,25 @@
 import About from "./About.astro";
 import Header from "./Header.astro";
 import Sidenav from "./Sidenav.astro";
+import Timeline from "./Timeline.astro";
 ---
 
-<main class="grid grid-cols-5 gap-5">
-  <section class="col-span-12 md:col-span-2 sm:pt-48 pr-32 self-start sticky">
-    <Sidenav class="" />
+<main class="grid grid-cols-5 gap-5 overflow-hidden">
+  <section class="col-span-12 md:col-span-2 sm:pt-48 self-start">
+      <Sidenav class="" />
   </section>
-  <section class="col-span-12 md:col-span-3 sm:pt-24">
+  <section class="col-span-12 md:col-span-2 sm:pt-24 px-20">
     <main
-      class="m-auto w-full flex flex-col gap-24 justify-start items-center sm:items-start"
+      class="m-auto w-full flex flex-col gap-24 justify-start items-center sm:items-start overflow-y-auto"
     >
-      <section class="md:w-1/2">
+      <section>
         <Header />
       </section>
-      <section class="md:w-1/2">
+      <section>
         <About />
+      </section>
+      <section class="">
+        <Timeline />
       </section>
     </main>
   </section>
