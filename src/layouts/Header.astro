@@ -1,0 +1,29 @@
+---
+import Chip from "../components/Chip.astro";
+---
+
+<section class="inline-flex flex-col gap-4">
+  <img
+    class="rounded-full h-24 w-24 hover:object-cover transition-all border-2 border-yellow-300"
+    src="/yo.jpg"
+    alt="Jorge Garcia Villa"
+  />
+  <div class="col-span-2 inline-flex flex-col justify-start items-start gap-6">
+    <div class="">
+      <h1 class="text-4xl font-black text-gray-100">Hola! Soy Jorge García</h1>
+      <p class="text-gray-100 text-xl">
+        +3 años de experiencia. <span class="text-yellow-700"
+          >Desarrollador de aplicaciones web</span
+        >, especializado en Frontend, maquetación y <span
+          class="bg-clip-text text-transparent font-bold bg-gradient-to-r from-yellow-500 to-yellow-500"
+          >Diseño UX/UI
+        </span>.
+      </p>
+    </div>
+    <section class="inline-flex gap-5">
+      <Chip title="LinkedIn" />
+      <Chip title="GitHub" />
+      <Chip title="Contactame" />
+    </section>
+  </div>
+</section>

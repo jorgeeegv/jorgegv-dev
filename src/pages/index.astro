@@ -1,5 +1,7 @@
 ---
-
+import '@fontsource/metropolis';
+import '@fontsource/pacifico';
+import Layout from "../layouts/Layout.astro"
 ---
 
 <html lang="en">
@@ -8,9 +10,35 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Portfolio Jorge García Villa</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+		<Layout></Layout>
 	</body>
 </html>
+<style is:global>
+
+* {
+	min-width: 0;
+	font: inherit;
+}
+*::before,*::after{
+	box-sizing: border-box;
+}
+img, video, svg {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+body {
+	margin: 0;
+	min-height: 100dvb;
+}
+h1,h2,h3,h4,h5,h6 {
+	text-wrap: balance;
+}
+p {
+	text-wrap: pretty;
+}
+
+</style>
