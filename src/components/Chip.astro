@@ -3,7 +3,8 @@ const { title } = Astro.props;
 ---
 
 <div
-  class="rounded-xl bg-black-700 border border-yellow-500 px-3 py-1"
+  class="rounded-xl bg-black-700 border border-yellow-500 px-3 py-1 inline-flex gap-2 items-center flex-row"
 >
-  {title}
+  <slot></slot>
+  <span>{title}</span>
 </div>
