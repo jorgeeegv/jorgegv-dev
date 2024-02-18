@@ -1,14 +1,14 @@
 <section class="">
-  <div class="col-span-2 flex flex-col gap-6 justify-start">
+  <div class="col-span-2 flex flex-col gap-6 sm:justify-start">
     <div class="flex items-center gap-3">
-      <svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a9 9 0 0 0 5-1.5 4 4 0 0 0-4-3.5h-2a4 4 0 0 0-4 3.5 9 9 0 0 0 5 1.5Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
       </svg>
       <h1 class=" text-3xl font-bold">Sobre mí</h1>
     </div>
-    <div class="flex flex-row gap-10">
-      <div class="justify-center items-center flex flex-col gap-5 text-xl">
-        <p>
+    <div class="grid grid-cols-4 sm:grid-cols-3 gap-10 pr-10 sm:pr-0 items-center sm:items-start">
+      <div class="col-span-4 sm:col-span-2 justify-center items-center gap-5 flex flex-col text-lg">
+        <p class="">
           Me llamo <span class="text-yellow-500">Jorge García Villa</span>.
           Desde muy pequeño me encantaba dibujar, cuando empece a programar
           siempre tuve un gusto especial por la maquetación, la estructura de la
@@ -25,10 +25,10 @@
         </p>
       </div>
       <div
-        class="relative transition duration-500 hover:scale-105"
+        class="transition duration-500 hover:scale-105 col-span-2 sm:col-span-1 items-center sm:items-start"
       >
         <img
-          class="object-cover object-top w-full h-56 transition duration-500 sm:h-full scale-110 group-hover:scale-125"
+          class="object-cover object-top w-full h-auto sm:h-56 transition duration-500 sm:h-full scale-110 group-hover:scale-125"
           src="/yo.jpg"
           alt="Jorge Garcia Villa"
         />
